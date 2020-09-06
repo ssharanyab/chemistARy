@@ -1,0 +1,32 @@
+nav{
+    text-decoration-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+}
+
+.logo{
+    color: black;
+    letter-spacing: 5px;
+    font-size: 20px;
+    cursor: context-menu;
+    font: poppins;
+}
+
+.nav-links{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}

@@ -1,0 +1,16 @@
+body.is-preload .tiles article {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+	@media screen and (max-width:760px) {
+		body {
+			opacity: 0;
+			background-image: url(/assets/rotate.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}

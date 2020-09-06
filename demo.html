@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AR DEMO</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+        }
+
+
+        nav {
+            text-decoration-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: white;
+        }
+
+        .logo {
+            color: black;
+            letter-spacing: 5px;
+            font-size: 20px;
+            cursor: context-menu;
+        }
+
+        .nav-links {
+            display: flex;
+            width: 35%;
+            justify-content: space-around;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu div {
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 5px;
+
+        }
+
+        .banner-area {
+            width: 100%;
+            height: 500px;
+            position: fixed;
+            top: 100px;
+            background-image: url(logo.png);
+            -webkit-backgroud-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .content-area {
+            width: 100%;
+            position: relative;
+            top: 450px;
+            background: black;
+            height: 700px;
+        }
+
+        .content-area h1 {
+            color: white;
+            text-align: center;
+            letter-spacing: 6px;
+        }
+
+        .content-area h4 {
+            color: white;
+            text-align: center;
+            letter-spacing: 4px;
+            padding: 60px;
+        }
+
+        .content-area h3 {
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+            padding: 15px;
+            position: fixed;
+        }
+
+        @media screen and (max-width:1024) {
+            .nav-links {
+                display: flex;
+                width: 60%;
+                justify-content: space-around;
+            }
+        }
+
+        @media screen and (max-width:760px) {
+    body {
+        opacity: 0;
+        background-image: url(/assets/rotate.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        iframe {
+            position: relative;
+            height: 100vh;
+            width: 50vh;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <h4>The AR Room</h4>
+
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.htm">Home</a>
+                </li>
+                <li>
+                    <a href="lessons.html">Lesson</a>
+                </li>
+                <li>
+                    <a href="#">Discussion</a>
+                </li>
+                <li>
+                    <a href="demo.html">Demo</a>
+                </li>
+            </ul>
+            <div class="menu">
+                <div class="line 1"></div>
+                <div class="line 2"></div>
+                <div class="line 3"></div>
+            </div>
+        </nav>
+    </div>
+    <h1>&nbsp&nbsp&nbspRutherford model
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThomsan model
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPeriodic Table
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLab Equipment
+    </h1>
+    <iframe src="https://go.echoar.xyz/eMX7" title="Ruther Model">
+    </iframe>
+    <iframe src="https://go.echoar.xyz/oEdw" title="Thomson Model">
+    </iframe>
+    <iframe src="https://go.echoar.xyz/cM4U" title="Periodic Table">
+    </iframe>
+    <iframe src="https://go.echoar.xyz/5mKq" title="Lab Equipment">
+    </iframe>
+
+</body>
+
+</html>
