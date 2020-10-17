@@ -14,7 +14,7 @@
 - HTML
 - CSS
 - JS
-- echoAR
+- echoAR (used iframe to embedd into webpage)
 ## Future scope
 - Add peer-to-peer interaction
 - Add authentication
